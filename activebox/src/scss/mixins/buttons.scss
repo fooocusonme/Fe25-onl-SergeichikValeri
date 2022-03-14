@@ -1,0 +1,13 @@
+@mixin button {
+    width: 370px;
+    height: 78px;
+    display: block;
+    margin: auto;
+    background-color: $carrot;
+    text-align: center;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Raleway', sans-serif;
+}

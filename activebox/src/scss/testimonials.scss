@@ -1,0 +1,56 @@
+.testimonials .container {
+    max-width: 100%;
+    padding: 0;
+}
+.slider {
+    width: 100%;
+    position: relative;
+}
+.slider-item {
+    display: flex;
+    align-items: center;
+    height: 490px;
+    width: 100%;
+}
+.slider-img {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.slider-text {
+    background-color: $purple;
+    width: 52%;
+    height: 100%;
+
+    h2 {
+        font-family: 'Cardo', serif;
+        font-weight: 400;
+        font-style: italic;
+        width: 471px;
+        text-transform: capitalize;
+        margin: auto;
+        text-align: left;
+        margin-top: 116px;
+        margin-bottom: 25px;
+        color: $white;
+    }
+    span {
+        @include text-2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        width: 471px;
+        margin: auto;
+        text-align: left;
+        display: block;
+    }
+}

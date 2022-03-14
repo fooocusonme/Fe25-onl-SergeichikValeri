@@ -1,0 +1,59 @@
+.works .container {
+    max-width: 100%;
+    padding: 0;
+}
+.works-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    a{
+        width: 25%;
+        height: 50%;
+        border: 1px solid $white;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &:hover .img-info {
+        display: block;
+    }
+
+    &:active .img-info::after {
+        background-color: $darkred;
+    }
+}
+}
+.img-info {
+    display: none;
+    &::after {
+        content: '';
+        background-color: $coral;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.img-info-content {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+    color: $white;
+    z-index: 1;
+}
+.img-description {
+    @include text-3;
+    margin-top: 15%;
+}

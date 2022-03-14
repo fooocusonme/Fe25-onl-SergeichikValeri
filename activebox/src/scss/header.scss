@@ -1,0 +1,96 @@
+.header {
+padding: 38px 0 120px;
+background-image: url(../img/header-bg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+z-index: 1;
+
+&::after {
+    content: '';
+    background-color: $blue;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+.container {
+    z-index: 2;
+    position: relative;
+}
+.active-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $beige;
+}
+.header-logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    @include text-5;
+    .logo-text {
+        color: $grey2;
+        &::after {
+            content: 'BOX';
+            color: #fff;
+            font-weight: 100;
+        }
+    }
+}
+  .menu-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: center;
+      cursor: pointer;
+      .menu-row__item {
+        @include text-2;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 36px;
+        border-bottom: 3px solid $transparent;
+        transition: 0.2s;
+        &:hover {
+            border-bottom: 3px solid $beige;
+        }
+        &:active {
+            border-bottom: 3px solid $red;
+        }
+        a {
+            color: $white;
+            padding: 0 25px;
+            &:active {
+                color: $red;
+            }
+        }
+      }
+  }
+  .firstscreen {
+      margin: 120px auto 0;
+      color: $white;
+      width: 100%;
+    .firstscreen-subtitle {
+        @include text-1;
+        font-weight: 100;
+        margin: 32px auto 82px;
+        width: 90%;
+    }
+    .firstscreen-btn {
+        @include button;
+        @include text-1;
+        font-weight: 900;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $red;
+        }
+        &:active {
+            box-shadow: 4px 4px 30px $carrot;
+        }
+    }
+  }

@@ -1,0 +1,22 @@
+.footer {
+    padding: 24px;
+    background-color: $blue2;
+}
+.footer .container {
+    text-align: center;
+}
+.footer-copyright {
+    @include text-3;
+    color: $grey;
+    font-weight: 400;
+}
+.footer-r {
+    @include text-3;
+    color: $grey;
+    font-weight: 400;
+}
+.footer-b {
+    @include text-3;
+    color: $white;
+    font-weight: 400;
+}

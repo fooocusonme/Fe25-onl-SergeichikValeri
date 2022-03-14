@@ -1,0 +1,35 @@
+.download {
+    padding: 115px 0;
+}
+.download .container {
+    margin: auto;
+    max-width: 1170px;
+}
+.download-title {
+    h3 {
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+}
+.download-subtitle {
+    h5 {
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+}
+.download-btn {
+    .download-button {
+        @include button;
+        @include text-1;
+        text-transform: uppercase;
+        font-weight: 900;
+
+        &:hover {
+            background-color: $red;
+        }
+        &:active {
+            box-shadow: 4px 4px 30px $carrot;
+        }
+    }
+}
